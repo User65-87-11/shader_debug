@@ -14,7 +14,7 @@ HOW TO USE
 
 	FragColor = out_color;
 */
-
+#ifdef _OLD2_
 bool seg_a(vec2 v, vec2 o) {
     return (v.x > o.x + 5 && v.x < o.x + 5 + 40 && v.y > o.y && v.y < o.y + 10);
 }
@@ -79,10 +79,6 @@ bool draw_digit(uint digit, vec2 v, vec2 o)
         (f && seg_f(v, o)) ||
         (g && seg_g(v, o));
 }
-const uint DIGIT_MASK[10] = uint[10](
-        0x3F, 0x06, 0x5B, 0x4F, 0x66,
-        0x6D, 0x7D, 0x07, 0x7F, 0x6F
-    );
 
 bool draw_digit2(uint digit, vec2 v, vec2 o)
 {
@@ -124,6 +120,12 @@ bool draw_digit2(uint digit, vec2 v, vec2 o)
             x > ox + 5.0 && x < ox + 45.0 &&
             y > oy + 50.0 && y < oy + 60.0);
 }
+#endif
+
+const uint DIGIT_MASK[10] = uint[10](
+        0x3F, 0x06, 0x5B, 0x4F, 0x66,
+        0x6D, 0x7D, 0x07, 0x7F, 0x6F
+    );
 
 bool draw_digit3(uint digit, vec2 v, vec2 o, float s)
 {
@@ -174,7 +176,7 @@ bool draw_9999(uint val, vec2 v, vec2 o, float s)
         draw_digit3(c, v, o + vec2(2.0 * w, 0.0), s) ||
         draw_digit3(d, v, o + vec2(3.0 * w, 0.0), s);
 }
-
+#ifdef _OLD2_
 bool draw_9999_2(uint val, vec2 v, vec2 o) {
     val = min(val, 9999u);
     uint a = (val / 1000u) % 10u;
@@ -191,3 +193,4 @@ bool draw_9999_2(uint val, vec2 v, vec2 o) {
             draw_digit2(d, v, vec2(o.x + 180.0, y));
     return result;
 }
+#endif
