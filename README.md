@@ -2,4 +2,8 @@
 fragment shader debug display
 
 
-[![Demo](./demo/7seg_demo.mp4)](./demo/7seg_demo.mp4)
+
+
+[Demo](https://github.com/user-attachments/assets/c6d13133-49d5-4a9f-9be2-9eb0dde037af)
+
+
