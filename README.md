@@ -4,6 +4,8 @@ fragment shader debug display
 
 
 
-[Demo](https://github.com/user-attachments/assets/c6d13133-49d5-4a9f-9be2-9eb0dde037af)
+
+![Demo](https://github.com/user-attachments/assets/6b31803d-a4db-483e-8f71-86b96c9c7a0f)
+
 
 
