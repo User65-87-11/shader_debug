@@ -16,9 +16,9 @@ const uint DIGIT_MASK[16] = uint[16](
 
     // A-F
     0x77, // A
-    0x7C, // b
+    0x7C, // B
     0x39, // C
-    0x5E, // d
+    0x5E, // D
     0x79, // E
     0x71  // F
 );
