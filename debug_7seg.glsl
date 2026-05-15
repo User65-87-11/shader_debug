@@ -58,6 +58,15 @@ bool draw_digit(uint mask, vec2 v, vec2 o, float s)
             x > 5.0 && x < 45.0 &&
             y > 50.0 && y < 60.0);
 }
+/*
+	
+	draw_value(128, gl_FragCoord.xy, pos1 , 0.4, 10)
+	
+	draw_value(0xfabf, gl_FragCoord.xy, pos2 , 1.0, 16)
+*/
+
+
+
 bool draw_value(uint val, vec2 current_frag, vec2 output_pos, float size, uint type)
 {
     uint d0;
